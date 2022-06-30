@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              bluepurple: "#5147E6",
+              navyblk: "#181828",
+              lightgray: "#959498",
+            },
+          },
+        },
+      };
+    </script>
+    <title>News letter 1</title>
+  </head>
+  <body>
+    <div class="max-w-md mx-4 my-16 md:max-w-5xl md:mx-8">
+      <div class="w-full text-3xl font-extrabold md:text-4xl">
+        Want product news and update?
+        <span class="inline text-bluepurple md:block"
+          >Sign up for our newsletter.</span
+        >
+      </div>
+      <div class="md:flex my-6">
+        <div>
+          <form>
+            <label class="block">
+              <input
+                class="text-lightgray w-full border-gray-200 border-2 rounded-md py-3 px-4 mt-8 mb-3 text-base md:text-sm md:w-80 md:m-0"
+                type="email"
+                id="email"
+                name="email"
+                value="Enter your email"
+            /></label>
+          </form>
+        </div>
+        <button
+          class="bg-bluepurple text-md text-white w-full rounded-md py-4 px-2 md:text-sm md:w-24 md:py-1 md:px-1 md:ml-3"
+        >
+          Notify me
+        </button>
+      </div>
+    </div>
+  </body>
+</html>
